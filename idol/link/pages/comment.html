@@ -12,15 +12,30 @@
         <a href="musical_career.html">Musical Career</a> |
         <a href="comment.html">Comment</a> |
     </nav>
+
     <br>
+
     <h2><i>Thank you for your feedback & value comments.</i></h2>
-    <form action="request.php" method="get"></form>
-    <input type="email" name="user_email" id="email" placeholder="example@gmail.com">
-    <br><br>
-    <p><b>Comments:</b></p>
-    <textarea name="student_address" id="address" rows="10" cols="50"></textarea>
-    <br><br> 
-    <button type="submit"><i>Submit</i></button>
+
+    <form action="request.php" method="get">
+     <input type="email" name="student_email" id="email" placeholder="example@gmail.com">
+     <br><br><br>
+    <label for=""><b>Feedback:</b></label>
+    <br>
+     <input type="radio" name="Feedback" id="Not Sure" value="Not Sure"> <label for="Not Sure">Not Sure</label>
+     <input type="radio" name="Feedback" id="Good" value="Good"> <label for="Good">Good</label>
+     <input type="radio" name="Feedback" id=" Very Good" value="Very Good"> <label for="Very Good"> Very Good</label>
+     <br><br>
+     <p><b>Comments:</b></p>
+     <textarea name="student_address" id="address" rows="10" cols="50"></textarea>
+     <br><br> 
+     <button type="submit"><i>Submit</i></button>
+     <br>
+    </form>
+
+    <footer>
+        <p align="left">&copy; All right reserved | Make With <span style="color: red;">&hearts;</span></p>
+    </footer>
   
         
 </body>
