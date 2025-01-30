@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+h2{
+    /* color: red; */
+    /* Hex 0 -> 9, a -> f */
+    /* color: #ff0000; */
+    /* shortHex 0 -> 9, a -> f */
+    /* color: #f00; */
+    /* rgb 0 -> 255 */
+    color: rgb(255, 0, 0);
+}
+small{
+    display:block;
+    color: green;
+    font-size: 20px;
+    text-indent: 40px;
+}
