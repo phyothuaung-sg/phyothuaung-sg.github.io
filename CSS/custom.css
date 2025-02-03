@@ -40,3 +40,32 @@ a[title="google"]{
 .child > a{
     color: aqua;
 }
+
+/* pesudo selector */
+a:link{
+    color: red;  
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: yellow;
+}
+
+a:visited{
+    color: brown;
+}
+
+/* Target */
+:target{
+    color: goldenrod;
+    border: 2px solid black;
+}
+
+p:target{
+    color: goldenrod;
+    border: 2px solid black;
+}
+
