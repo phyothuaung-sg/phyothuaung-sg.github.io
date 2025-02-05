@@ -1,12 +1,12 @@
 /* universal selector */
-*{
+/* *{
  color: red;
  font-size: 20px;
-}
+} */
 
 /* tag / element selector */
 h1 {
-    color: green;
+    /* color: green; */
     text-align: center;
 }
 
@@ -69,3 +69,46 @@ p:target{
     border: 2px solid black;
 }
 
+/* Border */
+.borderone{
+    border: 10px dotted black;
+}
+
+.bordertwo{
+    border-top: 10px solid red;
+}
+
+.bordersizeone{
+    border-style: solid;
+    border-width: 10px 50px;
+}
+
+.borderstyleone{
+    /* border-style: solid */
+    border-style: solid dotted double dashed;
+}
+
+/* margin */
+.margin{
+    border: 1px soil black;
+    margin: 50px 20px;
+}
+
+/* Padding */
+.padding{
+    border: 1px solid red;
+    padding: 100px
+}
+
+/* Inline */
+.inline{
+    border: 2px solid blueviolet;
+    width: 300px;
+    display: inline-block;
+}
+
+.block{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
+}
