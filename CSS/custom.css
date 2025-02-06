@@ -8,6 +8,7 @@
 h1 {
     /* color: green; */
     text-align: center;
+    margin: 50px;
 }
 
 /* attribute selector */
@@ -111,4 +112,55 @@ p:target{
     border: 2px solid black;
     width: 300px;
     display: inline-block;
+}
+
+/* Float */
+.float_left img{
+    width: 25%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+}
+
+/* Grid */
+.gridOne div, .gridTwo div, .gridThree div, .gridFour div, .gridFive div,.gridSix div{
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.gridOne, .gridTwo, .gridThree, .gridFour, .gridFive, .gridSix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridTwo{
+    grid-column-gap: 30px;
+}
+
+.gridThree{
+    grid-row-gap: 30px;
+}
+
+.gridFour{
+    grid-gap: 50px;
+
+}
+
+.colunmadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    /* grid-column-start: 2; */
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
