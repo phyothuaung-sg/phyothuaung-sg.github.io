@@ -164,3 +164,63 @@ p:target{
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
+.relative_parent{
+    border: 2px solid red;
+    width: 1000px;
+    height: 500px;
+}
+
+.relative{
+    border: 2px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    /* position relative is start from element */
+}
+
+.absolute_parent{
+    border: 2px solid brown;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    /* position absolute is start from document */
+}
+
+.absolute{
+    border: 2px dotted greenyellow;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+
+.fixed{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
+/* Font */
+.onlineFont{
+
+}
+
+.onlineFont {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"shadow";
+    src:url(ShadowsIntoLight-Regular.ttf) ;
+  }
+
+  .OffLine{
+    font-family: "shadow";
+  }
+  
