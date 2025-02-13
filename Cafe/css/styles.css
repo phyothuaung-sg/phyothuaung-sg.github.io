@@ -99,3 +99,69 @@ body {
     border-radius: 5px;
 }
 
+/* Signature Menu */
+.signature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 70px;
+    column-gap: 50px;
+}
+
+.signature .signature-img {
+    width: 100%;
+}
+
+.signature-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.menu-title {
+    font-size: 3em;
+    color: white;
+}
+
+.menu-about {
+    margin: 30px 0;
+    font-size: 1.3em;
+}
+
+/* About Kyaw Cafe */
+.about {
+    background-image: url(../images/home-about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+
+    /* For text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 200px;
+}
+
+/* Special Meanu */
+
+.special {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 70px;
+    column-gap: 50px;
+}
+
+.special-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.special-img {
+    width: 100%;
+}
