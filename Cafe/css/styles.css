@@ -165,3 +165,82 @@ body {
 .special-img {
     width: 100%;
 }
+
+/* Silone Tea */
+.silone-tea {
+    background-image: url('../images/silonetea-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    text-align: center;
+}
+
+.silone-tea-img {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+/* Our Popular Menu */
+.our-menu-title {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+.our-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    margin: 0 70px;
+}
+
+.menu-item {
+    background-color: #26231d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-img {
+    width: 100%;
+}
+
+.item-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.item-name {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* View More button */
+.view-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 100px 0;
+}
+
+
+
+
+

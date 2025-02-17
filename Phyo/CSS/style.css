@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+    color: rgb(29, 205, 38);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 45px;
+    height: 45px;
+    margin: 0 15px 0 15px;
+}
+
+.brand h2 {
+    letter-spacing: 3px;
+}
+
+.nav-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    gap: 35px;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(29, 205, 38);
+    padding: 15px;
+    font-size: 20px;
+}
+
+.nav-menu ul li a:hover {
+    color: white;
+    background-color: rgb(29, 205, 38);
+    border-radius: 5px;
+}
+
+/* Hero Image */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/hero\ image.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+}
