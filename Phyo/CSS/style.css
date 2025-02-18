@@ -4,8 +4,8 @@
 }
 
 body {
-    background-color: aliceblue;
-    color: rgb(29, 205, 38);
+    background-color: #1a1814;
+    color: #cda45e;
 }
 
 .navbar {
@@ -24,6 +24,7 @@ body {
     width: 45px;
     height: 45px;
     margin: 0 15px 0 15px;
+    border-radius: 30px;
 }
 
 .brand h2 {
@@ -43,14 +44,14 @@ body {
 
 .nav-menu ul li a {
     text-decoration: none;
-    color: rgb(29, 205, 38);
+    color: white;
     padding: 15px;
     font-size: 20px;
 }
 
 .nav-menu ul li a:hover {
-    color: white;
-    background-color: rgb(29, 205, 38);
+    color: #cda45e;
+    background-color: #1a1814;
     border-radius: 5px;
 }
 
@@ -59,7 +60,7 @@ body {
     position: relative;
     width: 100%;
     height: 200px;
-    background-image: url('../images/hero\ image.webp');
+    background-image: url();
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

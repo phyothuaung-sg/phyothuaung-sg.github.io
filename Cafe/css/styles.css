@@ -240,6 +240,79 @@ body {
     margin: 50px 0 100px 0;
 }
 
+/* Contact Us */
+.contact-us h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+.map {
+    margin: 0 70px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 70px;
+}
+
+.info {
+    display: flex;
+    padding: 20px 0;
+}
+
+.contact-icon {
+    position: relative;
+    background-color: #cda45e;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-color: #1a1814;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+}
+
+.footer {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.dev {
+    color: #cda45e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
 
 
 
