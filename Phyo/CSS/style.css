@@ -59,11 +59,48 @@ body {
 .hero-container {
     position: relative;
     width: 100%;
-    height: 200px;
-    background-image: url();
+    height: 600px;
+    background-image: url('../images/hero-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
+
+    /* For text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
+
+.hreo-text{
+    font-size: 20em;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.types{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 70px;
+    column-gap: 50px;
+}
+
+.types-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.type-img {
+    width: 100%;
+}
+
+
+
