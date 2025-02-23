@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #1a1814;
+    background-color: whitesmoke;
     color: #cda45e;
 }
 
@@ -44,10 +44,11 @@ body {
 
 .nav-menu ul li a {
     text-decoration: none;
-    color: white;
+    color: #c5974a;
     padding: 15px;
     font-size: 20px;
 }
+
 
 .nav-menu ul li a:hover {
     color: #cda45e;
@@ -55,52 +56,43 @@ body {
     border-radius: 5px;
 }
 
-/* Hero Image */
-.hero-container {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    background-image: url('../images/hero-image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: multiply;
-
-    /* For text */
+.shop {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
+    color: wheat;
+    font-size: 2em;
 }
-
-.hreo-text{
-    font-size: 20em;
-    font-weight: bold;
-}
-
-.hero-text p {
-    margin: 20px 0;
-}
-
-.types{
+/* 2in1 */
+.twone {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 150px 70px;
     column-gap: 50px;
 }
 
-.types-about {
+.twone-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
-.type-img {
-    width: 100%;
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #cda45e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
+.twone-img {
+    width: 80%;
+}
 
+.twone-img:hover {
+    width: 90%;
+
+}
 

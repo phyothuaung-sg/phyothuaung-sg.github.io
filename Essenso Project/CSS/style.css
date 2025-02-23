@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #cda45e;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 45px;
+    height: 45px;
+    margin: 0 15px 0 15px;
+    border-radius: 30px;
+}
+
+.brand h2 {
+    letter-spacing: 3px;
+}
+
+.nav-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    gap: 35px;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #c5974a;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.nav-menu ul li a:hover {
+    color: #cda45e;
+    background-color: #1a1814;
+    border-radius: 5px;
+}
+
+/* Hero Image */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: ;
+
+    /* For text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hreo-text{
+    font-size: 20em;
+    font-weight: bold;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.types{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 70px;
+    column-gap: 50px;
+}
+
+.types-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.type-img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.btn{
+	font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+	padding: 10px 250px;
+	border: 2px solid #c5974a;
+	color: #c5974a;
+	text-transform: uppercase;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	transition: 0.3s ease-in-out;
+	box-shadow: 0 0 10px #c5974a, 0 0 20px #c5974a;  
+}
+.btn:hover{
+	color: white;
+	background: #cda45e;
+	box-shadow: 0 0 20px #c5974a, 0 0 40px #c5974a;
+}
+
+
+
+
+
+
