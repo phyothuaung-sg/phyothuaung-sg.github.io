@@ -9,7 +9,9 @@ body {
 }
 
 .navbar {
-    display: grid;
+    display: grid; 
+    /* position: fixed;
+    top: 0; */
     grid-template-columns: 1fr 1fr;
     padding: 10;
     align-items: center;
@@ -65,7 +67,6 @@ body {
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: ;
 
     /* For text */
     display: flex;
@@ -100,7 +101,7 @@ body {
 
 .type-img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px 60px 30px;
 }
 
 .btn{
@@ -122,6 +123,11 @@ body {
 	background: #cda45e;
 	box-shadow: 0 0 20px #c5974a, 0 0 40px #c5974a;
 }
+
+.gridOne {
+    grid-row-gap: 50px; 
+}
+
 
 
 

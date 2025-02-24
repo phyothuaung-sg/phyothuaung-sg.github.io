@@ -79,12 +79,22 @@ body {
 }
 
 .btn {
-    display: inline-block;
+
     padding: 20px 30px;
     background-color: #cda45e;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.btn-disable {
+    padding: 20px 30px;
+    background-color: #cda45e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 .twone-img {
