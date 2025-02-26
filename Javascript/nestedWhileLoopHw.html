@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestedLoop</title>
+</head>
+<body>
+    <h1>Nested Looping homeWork </h1>
+    <script>
+        for (let h = 5; h > 0; h--) {
+    for (let m = 0; m < h; m++) {
+        document.write("*");
+    }
+    document.write("<br>");
+     }
+     
+    </script>
+    <hr>
+    <h1>Multiple homeWork</h1>
+    <script>
+     let yourNumber = Number(prompt("Enter your number"));
+        
+        
+        if (isNaN(yourNumber)) {
+            document.write("Please enter a valid number.");
+        } else {
+            let k = 1;
+            while (k <= 12) {
+                document.write(`${yourNumber} x ${k} = ${yourNumber * k}<br>`);
+                k++; 
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

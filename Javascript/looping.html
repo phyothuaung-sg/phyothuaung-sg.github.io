@@ -24,10 +24,49 @@
         }
 
         for (let k = 1; k <= 12; k++){
-            document.write(`<p> 13 x  ${k} = ${13*k}`);
+            document.write(`<p> 13 x  ${k} = ${13*k}`+'<br>');
+        }
+         //let yourNumber = Number(prompt(`enter your number`))
+
+        // Nested Looping
+
+        for(let h = 0; h < 5 ; h++){
+            for(let m = 0 ; m <= h ; m++){
+                document.write("*")
+            }
+            document.write("<br>")
+
         }
 
-        let yourNumber = Number(prompt(`enter your number`))
+        // while loop
+
+        // while (condition) {
+            // code
+
+            // update
+        // }
+
+        let number = (prompt("Enter a number"));
+        while (number <100){
+            documnet.write(`Your Number is ${number} <br>`);
+
+            number +=5;
+        }
+
+        // do while loop
+
+         let no = 10;
+         
+         do {
+            document.write(`Your number is =${no} <br>`)
+
+            no += 2;
+
+        } while(no<100);
+
+
+
+
     </script>
 </body>
 </html>
