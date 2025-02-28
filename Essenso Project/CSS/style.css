@@ -30,7 +30,7 @@ body {
 .brand h2 {
     font-size: 30px;
     font-style: italic;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
 }
 
 .nav-menu ul {
@@ -67,6 +67,7 @@ body {
     background-position: center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
 
     /* For text */
     display: flex;
@@ -77,7 +78,7 @@ body {
 }
 
 .hero-text h2 {
-    color: black;
+    color: white;
     line-height: 60px;
 }
 
@@ -113,6 +114,26 @@ body {
 
 
 /* SHOP */
+
+.freedelivery {
+    color: rgb(37, 37, 177); 
+    font-style: italic;
+    display: inline-block;
+    white-space: nowrap; 
+    animation: moveRightToLeft 20s linear infinite; 
+  }
+  
+  @keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(-1%); 
+    }
+    100% {
+        transform: translateX(100%); 
+      }
+  }
 
 .shop {
     display: flex;
@@ -181,6 +202,70 @@ body {
 .twone-about {
     margin: 30px 0;
     line-height: 30px;
+}
+
+/* contact us */
+
+.contact-form {
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(74, 57, 57);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.dev {
+    color: #cda45e;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 
