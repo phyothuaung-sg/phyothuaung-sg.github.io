@@ -7,14 +7,38 @@
 </head>
 <body>
     <h1 id="myId">Dom<i>Selector</i></h1>
+    <p class="myClass">Class Selector 1</p>
+    <div class =myClass>Class Selector 2</div>
     <button onclick="showData()">Click Me</button>
 
     <script>
         function showData() {
             // alert('ok');
+            // id selector
            let myId = document.getElementById('myId');
            console.log(myId.innerText);   
            console.log(myId.innerHTML);
+
+           myId.innerHTML = 'Javascript is <i> so funny! </i>';
+           
+        //    Class selector
+           let myClass = document.getElementsByClassName('myClass');
+           console.log(myClass);
+           console.log(myClass[1]);
+           console.log(myClass[1].innerText);
+
+        //    tag selector
+        let tagName = document.getElementsByTagName('p');
+        console.log(tagName[0].innerText);
+
+        // query selector
+        let querySelector = document.querySelector('.myClass');
+        console.log(querySelector);
+
+        // query selsctor all
+        let querySelectorAll = document.querySelectorAll('.myClass');
+        console.log(querySelectorAll);
+           
            
         }
     </script>
