@@ -37,7 +37,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: centers;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-menu ul li {
@@ -47,7 +47,7 @@ body {
 .nav-menu ul li a {
     text-decoration: none;
     color: #c5974a;
-    padding: 15px;
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -101,6 +101,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    line-height: 30px;
 }
 
 .type-img {
@@ -151,6 +152,13 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-item:hover img {
+    transform: scale(1.1); 
+    background-color: gray; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .shop-item span {
@@ -170,6 +178,19 @@ body {
     font-size: 15px;
 }
 
+.shop-item button {
+    background: rgb(20, 20, 114);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.shop-item button {
+    opacity: 0.6;
+    cursor: not-allowed;     
+}
+
 .shop-item h6{
     color: orange;
     font-size: 15px;
@@ -179,9 +200,9 @@ body {
 
 .twone {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 100px 70px;
-    column-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 70px;
+    column-gap: 50px;
 }
 
 .twone .twone-img {
@@ -204,10 +225,49 @@ body {
     line-height: 30px;
 }
 
+/* Twonee */
+.twonee {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin: 150px 70px;
+    column-gap: 50px;
+}
+
+.twonee .twone-img {
+    width: 100%;
+}
+
+.twonee-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.twonee-title {
+    font-size: 2.5em;
+}
+
+.twonee-about {
+    margin: 30px 0;
+    line-height: 30px;
+}
+
 /* contact us */
 
+.contact-details h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contact-details p {
+    text-align: center;
+}
+
 .contact-form {
+    margin: 0 auto;
     width: 45%;
+    height: 600px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -215,13 +275,14 @@ body {
 }
 
 .contact-form h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+    
 }
 
 .contact-form label {
@@ -230,8 +291,8 @@ body {
 }
 
 .contact-form input, .contact-form textarea {
-    padding: 12px;
-    margin-bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
