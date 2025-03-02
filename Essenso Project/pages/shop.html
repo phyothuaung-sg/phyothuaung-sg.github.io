@@ -40,7 +40,15 @@
                     <span>offer</span>
                     <p>28,000MMK</p>
                     <br>
-                    <a href="https://www.fairprice.com.sg/product/lor-essenso-2-in-1-instant-microground-coffee-creamer-20-x-16g-13225767" target="_blank">Add to cart</a>
+                    <div class="cart-container">
+                        <!-- Set 1 -->
+                        <div class="quantity-set">
+                          <button class="quantity-btn" onclick="changeQuantity('quantity1', -1)">-</button>
+                          <input type="text" id="quantity1" class="quantity-display" value="0" readonly>
+                          <button class="quantity-btn" onclick="changeQuantity('quantity1', 1)">+</button>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="shop-item">
@@ -50,7 +58,12 @@
                     <br>
                     <p>30,000MMK</p>
                     <br>
-                    <a href="https://www.fairprice.com.sg/product/lor-essenso-3-in-1-instant-microground-coffee-20-x-25g-13225766" target="_blank">Add to cart</a>
+                    <div class="quantity-set">
+                        <button class="quantity-btn" onclick="changeQuantity('quantity2', -1)">-</button>
+                        <input type="text" id="quantity2" class="quantity-display" value="0" readonly>
+                        <button class="quantity-btn" onclick="changeQuantity('quantity2', 1)">+</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
                 </div>
 
                 <div class="shop-item">
@@ -58,8 +71,9 @@
                     <p>Capsules BRAZILIAN ÉLÉGANCE 3IN1</p>
                     <h6 class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</h6>
                     <br>
-                    <p>30,000MMK</p>
-                    <button class="disable">Out of Stock</button>
+                    <p>30,000MMK</p><br>
+                    <!-- <button class="disable">Out of Stock</button> -->
+                     <a href="" class="disable">Out of Stock</a>
                 </div>
 
                 <div class="shop-item">
@@ -69,11 +83,28 @@
                     <br>
                     <p>29,000MMK</p>
                     <br>
-                    <a href="https://www.fairprice.com.sg/product/lor-essenso-2-in-1-instant-microground-coffee-colombian-mystique-20-per-pack-13225768" target="_blank">Add to cart</a>
+                    <div class="quantity-set">
+                        <button class="quantity-btn" onclick="changeQuantity('quantity3', -1)">-</button>
+                        <input type="text" id="quantity3" class="quantity-display" value="0" readonly>
+                        <button class="quantity-btn" onclick="changeQuantity('quantity3', 1)">+</button>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+
                 </div>
         </div>
         
     </main>
+
+      <script>
+        function changeQuantity(quantityId, change) {
+          const quantityInput = document.getElementById(quantityId);
+          let currentQuantity = parseInt(quantityInput.value);
+          if (currentQuantity + change >= 0) {
+            quantityInput.value = currentQuantity + change;
+          }
+        }
+      </script>
+      
 </body>
 
     <footer class="footer">
