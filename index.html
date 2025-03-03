@@ -1,3 +1,96 @@
-<h1>Hello Wrold!</h1>
-    <h2>My name is Phyo Thu Aung.</h2>
-    <h2>I live in Singapore</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyo Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!-- Internal CSS -->
+ <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        background-color: whitesmoke;
+    }
+
+    .divOne {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 90px 100px;
+    }
+
+    .phyoImg {
+        border-radius: 2%;
+    }
+
+    .divTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+    p {
+        margin: 30px 0;
+        line-height: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 6px 15px;
+        background-color: rgb(187, 149, 223);
+        text-decoration: none;
+        border-radius: 15px;
+    }
+
+    .btn:hover {
+        background-color: blueviolet;
+        cursor: pointer;
+    }
+
+    .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: blueviolet; 
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: darkviolet; 
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+}
+
+ </style>
+
+     
+<body>
+    <div class="divOne">
+        <img src="C:\Users\phyo\OneDrive\Documents\phyothuaung-sg.github.io\HTML\photo_6210827537186147214_y.jpg" alt="" width="260px" height="390px" class="phyoImg">
+        <div class="divTwo">
+            <h2><span style="color: gray;">I'm</span> Phyo Thu Aung</h2>
+            <p>Dedicated Environmental Officer with extensive experience in ensuring compliance with environmental regulations, including emissions, pollution, carbon footprint, and waste management. <br>Proficient in developing and implementing environmental policies, procedures, and impact assessments. Skilled in performance monitoring, staff training, managing external contractors, and presenting detailed reports to senior management.</p>
+            <div class="social-icons">
+                <button class="btn">Resume</button>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://x.com" target="_blank" class="social-icon"><i class="fab fa-x"></i></a> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
