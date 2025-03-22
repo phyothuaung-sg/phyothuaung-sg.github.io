@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="add-student">
+        <h2>Add Student</h2>
+        Name: <input type="text" id="name"><br><br>
+        Email: <input type="email" id="email"><br><br>
+        Phone: <input type="number" id="phone"><br><br>
+        Years: <select name="" id="year">
+            <option value="">Choose Year</option>
+            <option value="First Year">First Year</option>
+            <option value="Second Year">Second Year</option>
+            <option value="Third Year">Third Year</option>
+        </select><br><br>
+        <button id="add">Add Student</button>
+    </div>
+
+    <h1>Student List</h1>
+    <table border="1" cellspacing="0" cellpadding="25">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('#add').click(function(){
+                let name = $('#name').val();
+                let email = $('#email').val();
+                let phone = $('#phone').val();
+                let year = $('#year').val();
+
+                let students = {
+                    stu_name: name,
+                    stu_email: email,
+                    stu_phone: phone,
+                    stu_year: year
+                }
+
+                console.log(students);
+
+                let studentString = localStorage.getItem('students');
+                let studentArray;
+                if(studentString == null){
+                    studentArray = [];
+                }else{
+                    studentArray = JSON.parse(studentString);
+                }
+
+                // object array
+                studentArray.push(students);
+                console.log(studentArray);
+
+                // object array change to string
+                let studentData = JSON.stringify(studentArray);
+                console.log(studentData);
+                localStorage.setItem('students',studentData);
+
+                let stuString = localStorage.getItem('students');
+                let stuArray = JSON.parse(stuString);
+
+
+                let data = '';
+                let j = 1;
+                $.each(stuArray, function(i,v){
+                    data += `<tr>
+                                <td>${j++}</td>
+                                <td>${name}</td>
+                                <td>${email}</td>
+                                <td>${phone}</td>
+                                <td>${year}</td>
+                             </tr>`;
+                    
+                })
+
+                $('tbody').html(data);
+                
+            })
+        })
+    </script>
+</body>
+</html>

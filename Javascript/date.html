@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date Function</h1>
+    <p id="time"></p>
+    <script>
+        let todayDate = new Date();
+        console.log(todayDate);
+        console.log(todayDate.getFullYear());
+        console.log(todayDate.getMonth()+1);
+        console.log(todayDate.getDate());
+        console.log(todayDate.getDay());
+        console.log(todayDate.getHours());
+        console.log(todayDate.getMinutes());
+        console.log(todayDate.getSeconds());
+        console.log(todayDate.toLocaleTimeString());
+
+
+        setInterval(timeInterval,1000)
+
+        function timeInterval(){
+            let time = document.getElementById('time');
+            let date = new Date();
+            let second = date.toLocaleTimeString();
+            time.innerHTML = second;
+        }
+          
+    </script>
+</body>
+</html>

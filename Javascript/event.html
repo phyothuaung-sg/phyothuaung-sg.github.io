@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Lessons</h1>
+    <img src="../Essenso Project/images/seed.png" alt="" id="myImg" width="200px" height="300px" onmouseenter="big()" onmouseleave="normal()" onclick="soBig()">
+    <br>
+
+    <input type="text" id="myInput"  onkeyup="showData()">
+    <p id="result"></p>
+    <script>
+        
+        // onmouseover
+        // onmouseenter
+
+        // onmouseout
+        // onmouseleave
+
+        // onclick
+
+        // onkeyup
+
+        // onkeydown
+
+        // onchange
+
+
+        function big() {
+            document.getElementById('myImg').style.width = "400px"
+            document.getElementById('myImg').style.height = "500px"
+            
+        }
+
+        function normal() {
+            document.getElementById('myImg').style.width = "200px"
+            document.getElementById('myImg').style.height = "300px"
+            
+        }
+
+        function soBig() {
+            document.getElementById('myImg').style.width = "600px"
+            document.getElementById('myImg').style.height = "700px"
+            
+        }
+
+        function showData(){
+         myInput = document.getElementById('myInput').value;
+        document.getElementById('result').innerText = myInput;
+    }
+
+
+       
+    </script>
+</body>
+</html>

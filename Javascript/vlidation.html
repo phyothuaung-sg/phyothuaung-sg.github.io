@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlidation</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+
+    <form action="register.php" onsubmit="return checkValue()">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><p id="nameErrorMessage"></p>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email"><p id="emailErrorMessage"></p>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password"><br><br>
+
+        <label for="confirm_password">Confirm Password</label><br>
+        <input type="password" id="confirm_password"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+
+    <script>
+        function checkValue(){
+            if(name != "" && email != "" && password != "" && confirm_password != "" && password == confirm_password) {
+                return true;
+            }else{
+                var nameError = document.getElementById('name');
+                var nameErrorMessage = document.getElementById('nameErrorMessage');
+
+                if (name=="") {
+                    nameError.style.border = "1px solid red";
+                    nameErrorMessage.innerText = "Name is required!";
+                    nameErrorMessage.style.color = 'red';
+                }
+
+                if (name != "") {
+                    nameError.style.border = "1px solid black";
+                    nameErrorMessage.innerText = "";
+                }
+
+
+                if (email=="") {
+                    var emailError = document.getElementById ('email');
+                    emailError.style.border = "1px solid red";
+                    var emailErrorMessage = document.getElementById ('emailErrorMessage');
+                    emailErrorMessage.innerText = "Email is required!";
+                    emailErrorMessage.style.color = 'red';
+                }
+
+                if (email != "") {
+                    nameError.style.border = "1px solid black";
+                    nameErrorMessage.innerText = "";
+                }
+
+                return false;
+
+
+            }
+
+
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    
+    <form id="registrationForm" onsubmit="return checkValue()">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><p id="nameErrorMessage"></p>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email"><p id="emailErrorMessage"></p>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password"><br><br>
+
+        <label for="confirm_password">Confirm Password</label><br>
+        <input type="password" id="confirm_password"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function checkValue() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+            
+            var isValid = true; // Flag to track the validation status
+
+            // Clear previous error messages
+            document.getElementById('nameErrorMessage').innerText = '';
+            document.getElementById('emailErrorMessage').innerText = '';
+
+            // Name validation
+            var nameError = document.getElementById('name');
+            if (name == "") {
+                nameError.style.border = "1px solid red";
+                document.getElementById('nameErrorMessage').innerText = "Name is required!";
+                document.getElementById('nameErrorMessage').style.color = 'red';
+                isValid = false;
+            } else {
+                nameError.style.border = "1px solid black";
+            }
+
+            // Email validation
+            var emailError = document.getElementById('email');
+            if (email == "") {
+                emailError.style.border = "1px solid red";
+                document.getElementById('emailErrorMessage').innerText = "Email is required!";
+                document.getElementById('emailErrorMessage').style.color = 'red';
+                isValid = false;
+            } else {
+                emailError.style.border = "1px solid black";
+            }
+
+            // Password validation
+            if (password == "" || confirm_password == "") {
+                isValid = false;
+            }
+
+            // Password confirmation match
+            if (password !== confirm_password) {
+                alert("Passwords do not match!");
+                isValid = false;
+            }
+
+            return isValid; // Prevent form submission if validation fails
+        }
+    </script>
+</body>
+</html> -->
