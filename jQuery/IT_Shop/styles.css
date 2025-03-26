@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+header{
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: 0px 0px 15px 0px rgb(0,0,0,0.25);
+}
+.head{
+    display: flex;
+    margin: 30px 5%;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#cart{
+   margin: 8px;
+   background-color: blue;
+   cursor: pointer;
+}
+
+button{
+    border-radius: 5px;
+    border-color: blue;
+    background-color: blue;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn2{
+    color: white;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    margin-bottom: 35px;
+}
+
+ul li {
+    list-style-type: none;
+}
+ul li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+
+main{
+    margin: 50px 5%;
+}
+
+.main-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.div1{
+    border: 0.5px solid rgb(169, 169, 169);
+    border-radius: 8px;
+}
+
+.img1{
+    width: 250px;
+    height: 250px;
+    padding-left: 40px;
+    
+}
+
+.div1 p, .btn1{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.btn1{
+    width: 100px;
+    height: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.p1{
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
