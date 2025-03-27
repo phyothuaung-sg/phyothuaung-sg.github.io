@@ -21,7 +21,7 @@ header{
 }
 .head{
     display: flex;
-    margin: 30px 5%;
+    margin: 20px 5%;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
@@ -46,6 +46,7 @@ button{
     background-color: blue;
     cursor: pointer;
     margin-right: 5px;
+    /* position: fixed; */
 }
 
 .btn2{
@@ -106,4 +107,8 @@ main{
 .p1{
     font-weight: bold;
     letter-spacing: 0.5px;
+}
+
+tr th, tr td {
+    padding: 25px;
 }
