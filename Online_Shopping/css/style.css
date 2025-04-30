@@ -1,0 +1,13 @@
+.nav_hover:hover{
+    color:red !important;
+}
+
+.cart_noti{
+    position: relative;
+    top: -15px;
+    left: -7px
+    background-color: red;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
