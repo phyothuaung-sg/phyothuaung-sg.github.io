@@ -1,46 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+      <title>SingaporeTour</title>
+      <link rel="icon" href="images/logoWebBar.jpg">
+  </head>
 
-    <title>SingaporeTour - Travel with us</title>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand text-uppercase" href="#">Singapore Tours</a>
+  <body>
+      <!-- Navbar start -->
+      <section class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+          <div class="container">
+            <a class="navbar-brand text-uppercase" href="index.html">Singapore Tours</a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Packages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown ms-3">
+                      <a  class="nav-link dropdown-toggle nav_hover fw-medium" href="" data-bs-toggle="dropdown">Plan your tour</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="pages/play.html"><i class="bi bi-person-arms-up"></i> Play</a></li>
+                          <li><a class="dropdown-item" href="pages/stay.html"><i class="bi bi-buildings-fill"></i> Stay</a></li>
+                          <li><a class="dropdown-item" href="pages/dine.html"><i class="bi bi-fork-knife"></i> Dine</a></li>
+                        </ul>
+                  </li>
+                <!-- dropdown end -->
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/blog.html" target="_black">Blog</a>
+                </li>
+                <li class="nav-item dropdown ms-3">
+                      <a  class="nav-link dropdown-toggle nav_hover fw-medium" href="" data-bs-toggle="dropdown"><i class="bi bi-person-circle fs-5"></i></a>
+                      <ul class="dropdown-menu dropdown-menu-lg-end">
+                          <li><a class="dropdown-item" href="#"><small><i class="bi bi-person"></i> Log in/ Sign up</small></a></li>
+                          <hr>
+                          <li><a class="dropdown-item" href="#"><small> <i class="bi bi-heart"></i> Wishlists</small></a></li>
+                          <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"><small> <i class="bi bi-question-circle"></i> Help</small></a></li>
+                        </ul>
+                  </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+      <!-- Navbar end -->
+      <!-- Canvas start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Help Center</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        <div class="offcanvas-body">
+          <div>
+            <h6>Log in or Sign up for personalized Help.</h6>
+            <button type="button" class="btn btn-primary">Log in</button>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              More helpful
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Reserve Now & Pay Later</a></li>
+              <li><a class="dropdown-item" href="#">Local Guideline</a></li>
+              <li><a class="dropdown-item" href="#">Choosing your Experience</a></li>
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+      <!-- Canvas end -->
 
       <main>
-
-        <!-- Modal -->
-        <div class="modal fade" tabindex="-1" id="booking-modal">
+        <!-- modal start -->
+        <section class="modal fade" tabindex="-1" id="booking-modal">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -49,7 +91,7 @@
                 </div>
                 <div class="modal-body">
                     <form action="#">
-                        <div class="row g-2">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-floating">
                                     <input type="email" type="email" class="form-control" aria-placeholder="your email">
@@ -78,54 +120,365 @@
               </div>
             </div>
           </div>
+        </section>
+        <!--modal end  -->
 
-        <!-- Caresoul -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+        <!-- caresoul start -->
+        <section id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active c-item">
                 <img src="https://www.nitworldwideholidays.com/singapore-tour-packages/img/Best-of-Singapore-Package.jpg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                  <p class="fs-3 mt-5 text-uppercase">Discover Never End</p>
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5 text-uppercase">Discovery Never End</p>
                   <h1 class="display-1 fw-bolder text-capitalize">The Singapore Tours</h1>
                   <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal" >Book a tour</button>
                 </div>
               </div>
-              <div class="carousel-item active c-item">
-                <img src="https://i0.wp.com/coveringmiles.com/wp-content/uploads/Universal-Studio-Singapore/uss-singapore-1.jpg?fit=960%2C755&ssl=1" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+              <div class="carousel-item c-item">
+                <img src="https://thenewageparents.com/wp-content/uploads/2017/11/Visiting-Universal-Studios-Singapore-Insider-Tips.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5 text-uppercase">Once is never enough</p>
+                  <h1 class="display-1 fw-bolder text-capitalize">Universal Studio</h1>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal" >Book a tour</button>
                 </div>
               </div>
-              <div class="carousel-item active c-item">
+              <div class="carousel-item c-item">
                 <img src="https://pohcdn.com/sites/default/files/styles/node__blog_post__bp_banner/public/hero_banner/Gardens-by-the-Bay.jpg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5 text-uppercase">To Dream World</p>
+                  <h1 class="display-1 fw-bolder text-capitalize">Garden By the Bay</h1>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal" >Book a tour</button>
                 </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" ></span>
+              <span class="carousel-control-next-icon" aria-hidden="true" ></span>
               <span class="visually-hidden">Next</span>
             </button>
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div> 
+          
+          </section> 
+        <!-- carousel end -->
+
+        <!-- overview start -->
+        <section class="overview">
+          <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 text-center fs-4">
+              <div class="col-sm">
+              <i class="bi bi-globe-central-south-asia me-2"></i>
+              127+ Attractions to explore
+            </div>
+            <div class="col-sm">
+              <i class="bi bi-wallet-fill me-2"></i>
+              Only pay 5% up front
+            </div>
+            <div class="col-sm">
+              <i class="bi bi-patch-check-fill me-2"></i>
+              1000's of Customers
+            </div>
+            </div>  
+          </div>
+        </section>
+        <!-- overview end -->
+
+        <!-- explore start  -->
+        <section id="packages" class="pt-2">
+          <h2 class="text-center my-5">Explore our promoted experiences</h2>
+          <div class="container">
+            <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://t4.ftcdn.net/jpg/03/05/07/19/360_F_305071929_rpNHnojYD23nsb2MFIdTXIyxZA9MLmu2.jpg" class="card-img-top" alt="..." height="270px">
+                <!-- <i class="bi bi-heart-fill position-absolute top-0 end-0 m-2 text-light" style="font-size: 1.5rem; cursor: pointer;"></i> -->
+                  <div class="position-absolute top-0 end-0 m-2 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; box-shadow: 0 0 5px rgba(0,0,0,0.15); cursor: pointer;">
+                  <i class="bi bi-heart" style="font-size: 1.2rem; color: black;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Singapore Zoo</h5>
+                  <p class="card-text">Considered to be among the world’s best zoos, the Singapore Zoo showcases more than 3,600 animals from 300 different species across 69 acres (28 hectares) and hosts an incredibly successful orangutan-breeding program. The company of a family of orangutans.</p>
+                  <a href="#" class="btn btn-primary">Book tour</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://dynamic-media.tacdn.com/media/attractions-content--1x-1/0b/91/53/ab.jpg?f=webp&w=400&h=300&s=1" class="card-img-top" alt="..." height="270px">
+                  <div class="position-absolute top-0 end-0 m-2 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; box-shadow: 0 0 5px rgba(0,0,0,0.15); cursor: pointer;">
+                    <i class="bi bi-heart" style="font-size: 1.2rem; color: black;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Singapore Flyer</h5>
+                  <p class="card-text">All the major world cities seem to have a big wheel these days, and Singapore is no exception. Lifting you 540 feet (165 meters) into the air, the Singapore Flyer is Asia’s largest observation wheel, providing amazing panoramic views of the city, the sea, and the surrounds from one of 28 capsules.</p>
+                  <a href="#" class="btn btn-primary">Book tour</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://dynamic-media.tacdn.com/media/photo-o/2f/ab/86/7a/caption.jpg?w=2400&h=-1&s=1" class="card-img-top" alt="..." height="270px">
+                  <div class="position-absolute top-0 end-0 m-2 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; box-shadow: 0 0 5px rgba(0,0,0,0.15); cursor: pointer;">
+                    <i class="bi bi-heart" style="font-size: 1.2rem; color: black;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Marina Bay Sands</h5>
+                  <p class="card-text">Touted as the world’s most expensive casino complex—costing a cool $8 billion—Marina Bay Sands is Singapore’s most lavish resort, boasting a stunning waterfront location. Alongside the casino, there’s a 2,561-room hotel, luxury shopping mall, a giant rooftop infinity pool.</p>
+                  <a href="#" class="btn btn-primary">Book tour</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://dynamic-media.tacdn.com/media/attractions-content--1x-1/13/e1/e5/13.jpg?f=webp&w=400&h=300&s=1" class="card-img-top" alt="..." height="270px">
+                  <div class="position-absolute top-0 end-0 m-2 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; box-shadow: 0 0 5px rgba(0,0,0,0.15); cursor: pointer;">
+                    <i class="bi bi-heart" style="font-size: 1.2rem; color: black;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">ArtScience Museum</h5>
+                  <p class="card-text">Shaped like a lotus with 10 petals (or fingers), ArtScience Museum is a striking and iconic cultural institution at Marina Bay. The largest private museum in Singapore, ArtScience features 21 galleries, which host a mix of permanent and special exhibitions that explore the intersection of art, science, technology, and culture.</p>
+                  <a href="#" class="btn btn-primary">Book tour</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://dynamic-media.tacdn.com/media/attractions-content--1x-1/0b/27/af/3d.jpg?f=webp&w=400&h=300&s=1" class="card-img-top" alt="..." height="270px">
+                  <div class="position-absolute top-0 end-0 m-2 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; box-shadow: 0 0 5px rgba(0,0,0,0.15); cursor: pointer;">
+                    <i class="bi bi-heart" style="font-size: 1.2rem; color: black;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wild Wild Wet</h5>
+                  <p class="card-text">Wild Wild Wet, one of Singapore’s largest water parks, has everything you’d want and expect in a water-themed amusement park. The park’s dozen or so rides and attractions range from waterslides and a wave pool to kids areas and the relaxing Shiok River, where guests can float leisurely around the perimeter of the park.</p>
+                  <a href="#" class="btn btn-primary">Book tour</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+              <div class="card">
+                <img src="https://dynamic-media.tacdn.com/media/attractions-content--1x-1/15/71/72/67.jpg?f=webp&w=400&h=300&s=1" class="card-img-top" alt="..." height="270px">
+                  <div class="position-absolute top-0 end-0 m-2 bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; box-shadow: 0 0 5px rgba(0,0,0,0.15); cursor: pointer;">
+                    <i class="bi bi-heart" style="font-size: 1.2rem; color: black;"></i>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Bugis Street</h5>
+                  <p class="card-text">Located near downtown Singapore, Bugis Street is one of the largest and most famous shopping areas in the city. Formerly a red light district and gathering spot for the transgender community, today this covered market is home to hundreds of stalls and shops selling everything from clothing and accessories to electronics and souvenirs.</p>
+                  <a href="#" class="btn btn-primary">Book tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!-- explore end -->
+
+        <!-- Button start -->
+          <section class="d-grid gap-2 col-6 mx-auto text-center">
+            <a href="pages/play.html"><button class="btn btn-primary" type="button">See more Singapore attraction</button></a>
+          </section>
+        <!-- Button end -->
+
+        <!-- About start -->
+          <section class="container my-5">
+            <h2>All about Singapore</h2>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3 my-2">
+                <div class="card py-3 px-2">
+                  <div class="row">
+                  <div class="col-4 col-md-3 text-center">
+                    <i class="bi bi-currency-dollar fs-5"></i>
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <h6 class="fw-bold">Local Currency</h6>
+                    <p class="text-secondary">Singapore Dollar (SGD)</p>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 my-2">
+                <div class="card py-3 px-2">
+                  <div class="row">
+                  <div class="col-4 col-md-3 text-center">
+                    <i class="bi bi-globe2 fs-5"></i>
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <h6 class="fw-bold">Time Zone</h6>
+                    <p class="text-secondary">SGT (+7)</p>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 my-2">
+                <div class="card py-3 px-2">
+                  <div class="row">
+                  <div class="col-4 col-md-3 text-center">
+                    <i class="bi bi-telephone fs-5"></i>
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <h6 class="fw-bold">Country Code</h6>
+                    <p class="text-secondary">+65</p>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 my-2">
+                <div class="card py-3 px-2">
+                  <div class="row">
+                  <div class="col-4 col-md-3 text-center">
+                    <i class="bi bi-chat-left-dots fs-5"></i>
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <h6 class="fw-bold">Language</h6>
+                    <p class="text-secondary">English, Chinese</p>
+                  </div>
+                </div>
+                </div> 
+              </div> 
+            </div>
+            <hr>
+          </section>
+        <!-- about end -->
+
+        <!-- when to visit start -->
+          <section class="container text-start">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 my-2">
+                <h4>When to visit</h4>
+                <hr class="divided pt-0 mt-1 mb-4">
+                <p class="overflow-auto scroll-column">
+                  Hot and humid year-round, this destination actually has two rainy seasons—between November and January, and between June and September. It's relatively dry in February, March, and April, making it a good time to be outdoors in destinations like the Bukit Timah Nature Reserve, Singapore Botanic Gardens, and Mount Faber Park. Expect large crowds over the summer, during school holidays, and around numerous cultural festivals and big seasonal sales. Visit in the fall for smaller crowds, though plan ahead if you want to attend the Formula One Grand Prix in September.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-3 my-2">
+                <h4>Getting around</h4>
+                <hr class="divided pt-0 mt-1 mb-4">
+                <p class="overflow-auto scroll-column">
+                  Singapore has an excellent public transport network. The MRT is easy to use, and there’s usually a stop within walking distance of major attractions. Buses offer a more extensive footprint, but using them may be a little more confusing. Taxis are plentiful and affordable, and nearly all drivers speak English. A water taxi is also a limited but pleasant option for attractions along the river.
+                </p>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-5 my-2">
+                <h4>Traveler tips</h4>
+                <hr class="divided pt-0 mt-1 mb-4">
+                <p class="overflow-auto scroll-column">
+                  This city is famous for its food, and one of the best things to do in Singapore is to sample a variety of dishes at a hawker center. With more than 100 centers, there are plenty of options. Although most visitors flock to central hawker centers like Chinatown Complex, Maxwell Food Centre, and Lau Pa Sat, it’s worth visiting less centrally located options like the Old Airport Road Food Centre, the open-air Makansutra Gluttons Bay, and Changi Hawker Centre.
+                </p>
+              </div>
+            </div>
+            <hr>
+          </section>
+        <!-- When to visit end -->
+
+        <!-- accordion -->
+          <br>
+          <section class="container">
+            <h4>People Also Ask</h4>
+            <br>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Q: What Singapore is famous for?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body"><b>A:</b> A tiny island but a travel hub, the city is famous for its shopping,   street food, and its skyline, particularly Marina Bay Sands. Changi Airport, home to a 130-foot (40-meter) waterfall, ranks among the world’s best airports, while the iconic Raffles Hotel gave the world the Singapore Sling cocktail.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Q: What should you not miss in Singapore?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <b>A: </b> The best things to do in Singapore include visiting Sentosa for theme parks, Marina Bay for skyline views, Chinatown for temples and shops, and Little India for food and street art. Sip a Singapore Sling, eat chili crab and Hainanese chicken rice, and tour a museum. See the Merlion statue—the city’s mascot—and visit Bird Paradise, Asia’s largest bird park.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Q: Is Singapore a safe country?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <b>A:</b> Yes. With fearsome penalties, strong social bonds, and a repressive government, Singapore boasts one of the lowest violent crime rates in the world. It’s not unusual for locals to fall victims to scams, but crimes such as robbery, assault, murder, and stranger rape are extremely rare.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br>
+          <br>
+        <!-- accordion end -->
+      </main>
+  </body>
+
+  <footer>
+    <!-- footer start -->
+      <footer class="bg-dark">
+        <div class="container py-5">
+          <div class="row text-white text-center">
+            <div class="col ms-auto">
+              <div><i class="bi bi-facebook me-3"></i>
+              <i class="bi bi-twitter me-3"></i>
+              <i class="bi bi-pinterest me-3"></i>
+              <i class="bi bi-instagram me-3"></i>
+              <i class="bi bi-youtube me-3"></i>
+              <i class="bi bi-tiktok me-3"></i></div>
+              </div>
+              <div class="py-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> 4.4 rating | 261,430 reviews </div>
           </div>
 
+          <div class="container py-2"> 
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" class="text-decoration-none text-white d-block mt-2">Help Center</a>
+                <a href="" class="text-decoration-none text-white d-block mt-2">Privacy and Cookies Statment</a>
+                <a href="" class="text-decoration-none text-white d-block mt-2">Contact Us</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-decoration-none text-white d-block mt-2">Careers</a>
+                <a href="" class="text-decoration-none text-white d-block mt-2">Sitemap</a>
+                <a href="" class="text-decoration-none text-white d-block mt-2">News</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <a href="" class="text-decoration-none text-white d-block mt-2">About Us</a>
+                <a href="" class="text-decoration-none text-white d-block mt-2">Travel Agents</a>
+                <a href="" class="text-decoration-none text-white d-block mt-2">Supplier Sign Up</a>
+              </div>
+            </div>
+
+            <div>
+              <hr class="border">
+              <p class="text-white text-center pt-4">Copy right @2025. Designed By Phyo Thu Aung.</p>
+            </div>
+            
+          </div>
+
+
+            
           
-      </main>
-
-      <footer>
-
+          </div>
+        </div>
       </footer>
-    
-</body>
+    <!-- footer end -->
+  </footer>
 </html>
